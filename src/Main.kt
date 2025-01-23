@@ -11,7 +11,6 @@ fun main(){
     Compra(Cliente("Jorge Russo",Domicilio("Mirasol", 218)), 15, 958.0)
     )
     listaCompras.forEach {repo.agregarCompra(it)}
-    println(RepositorioCompras(listaCompras).domicilios())
-
+    println("Domicilios -> ${RepositorioCompras(listaCompras).domicilios()}")
 }
 
